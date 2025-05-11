@@ -1,0 +1,31 @@
+# Core NLP and ML libraries
+nltk==3.8.1
+spacy==3.7.2
+textblob==0.17.1
+transformers==4.40.0
+datasets==2.19.0
+scikit-learn==1.4.2
+
+# Supporting tools
+requests==2.31.0
+flask==3.0.2
+
+# Optional: for GPT2 training/tokenizing
+torch==2.2.2
+sentencepiece==0.1.99
+
+# Required by TextBlob
+pattern==3.6
+
+# Visualisation
+matplotlib==3.10.1
+
+seaborn==0.13.2
+
+# Logging and system tools (usually built-in)
+# logging, time, os, html, string, re – standard library, no need to include
+
+# spaCy language model (install separately after setup)
+# Run this after pip install:
+# python -m nltk.downloader punkt wordnet stopwords
+# python -m spacy download en_core_web_sm

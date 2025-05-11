@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Satirical News Generator</title>
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>AI-Generated Satirical News</h1>
+        <div class="news-container">
+            {% for original, satire in news %}
+            <div class="news-card original">
+                <h2>Original:</h2>
+                <p>{{ original }}</p>
+            </div>
+            <div class="news-card satirical">
+                <h2>Satirical:</h2>
+                <p>{{ satire }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
